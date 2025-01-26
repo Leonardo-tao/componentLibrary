@@ -7,7 +7,7 @@ import MyButton from './components/Button/MyButton.vue';
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
   </header>
-  <MyButton />
+  <MyButton type="primary" disabled plain>Test Button</MyButton>
 </template>
 
 <style scoped>
