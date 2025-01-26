@@ -1,6 +1,7 @@
 <template>
   <div>
     <button
+      ref="_ref"
       class="t-btn"
       :class="{
         [`t-btn--${type}`]: type,
@@ -12,6 +13,8 @@
         'is-loading': loading
       }"
       :disabled="disabled"
+      :autofocus="autofocus"
+      :type="nativeType"
     >
       <span>
         <slot />
@@ -23,11 +26,20 @@
 
 <script setup lang="ts">
 import type { ButtonProps } from './types.ts'
+import { ref } from 'vue'
 defineOptions({
   name: 'TtButton'
 })
 
-defineProps<ButtonProps>()
+withDefaults(defineProps<ButtonProps>(), {
+  nativeType: 'button'
+})
+
+const _ref = ref<HTMLButtonElement>()
+
+defineExpose({
+  ref: _ref
+})
 </script>
 
 <style scoped>
