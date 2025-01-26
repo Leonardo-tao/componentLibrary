@@ -21,16 +21,13 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-export default defineComponent({
+<script setup lang="ts">
+import type { ButtonProps } from './types.ts'
+defineOptions({
   name: 'TtButton'
 })
-</script>
-<script setup lang="ts">
-import type { ButtonProps } from './types.ts';
-defineProps<ButtonProps>()
 
+defineProps<ButtonProps>()
 </script>
 
 <style scoped>
