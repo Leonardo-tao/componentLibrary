@@ -42,6 +42,9 @@ defineExpose({
 })
 </script>
 
-<style scoped>
-
+<style>
+.t-btn {
+  --main-bg-color: #bfff00;
+  background-color: var(--main-bg-color);
+}
 </style>
