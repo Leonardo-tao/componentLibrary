@@ -14,12 +14,31 @@ onMounted(() => {
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
   </header>
+  
   <main>
-    <TtButton type="primary" plain ref="buttonRef">Test Button</TtButton>
+    <TtButton ref="buttonRef">Test Button</TtButton>
+    <TtButton plain>Plain Button</TtButton>
+    <TtButton round>Round Button</TtButton>
+    <TtButton circle>CB</TtButton>
+    <TtButton disabled>Disabled Button</TtButton>
+    <br><br>
+    <TtButton>Default</TtButton>
+    <TtButton type="primary">Primary</TtButton>
+    <TtButton type="success">Success</TtButton>
+    <TtButton type="info">Info</TtButton>
+    <TtButton type="warning">Warning</TtButton>
+    <TtButton type="danger">Danger</TtButton>
+    <br><br>
+    <TtButton plain>Plain</TtButton>
+    <TtButton type="primary" plain>Primary</TtButton>
+    <TtButton type="success" plain>Success</TtButton>
+    <TtButton type="info" plain>Info</TtButton>
+    <TtButton type="warning" plain>Warning</TtButton>
+    <TtButton type="danger" plain>Danger</TtButton>
+    <br><br>
+    <TtButton size="large">large</TtButton>
+    <TtButton size="small">small</TtButton>
   </main>
-  <span>
-    <a href="https://baidu.com">Click me</a>
-  </span>
 </template>
 
 <style scoped>

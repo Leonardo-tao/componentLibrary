@@ -24,6 +24,7 @@ export default defineConfigWithVueTs(
   {
     rules: {
       // Add your own rules here
+      '@typescript-eslint/no-require-imports': 'off',
     },
   },
 )

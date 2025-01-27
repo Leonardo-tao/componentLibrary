@@ -1,27 +1,24 @@
 <template>
-  <div>
-    <button
-      ref="_ref"
-      class="t-btn"
-      :class="{
-        [`t-btn--${type}`]: type,
-        [`t-btn--${size}`]: size,
-        'is-plain': plain,
-        'is-round': round,
-        'is-circle': circle,
-        'is-disabled': disabled,
-        'is-loading': loading
-      }"
-      :disabled="disabled"
-      :autofocus="autofocus"
-      :type="nativeType"
-    >
-      <span>
-        <slot />
-      </span>
-    </button>
-
-  </div>
+  <button
+    ref="_ref"
+    class="t-button"
+    :class="{
+      [`t-button--${type}`]: type,
+      [`t-button--${size}`]: size,
+      'is-plain': plain,
+      'is-round': round,
+      'is-circle': circle,
+      'is-disabled': disabled,
+      'is-loading': loading
+    }"
+    :disabled="disabled"
+    :autofocus="autofocus"
+    :type="nativeType"
+  >
+    <span>
+      <slot />
+    </span>
+  </button>
 </template>
 
 <script setup lang="ts">
@@ -43,8 +40,4 @@ defineExpose({
 </script>
 
 <style>
-.t-btn {
-  --main-bg-color: #bfff00;
-  background-color: var(--main-bg-color);
-}
 </style>
