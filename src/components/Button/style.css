@@ -42,11 +42,6 @@
   font-size: var(--t-font-size-base);
   border-radius: var(--t-border-radius-base);
 
-  > span {
-    display: inline-flex;
-    align-items: center;
-  }
-
   & + & {
     margin-left: 12px;
   }
@@ -67,9 +62,9 @@
   }
 
   &.is-plain {
-    color: var(--t-button-active-text-color);
-    border-color: var(--t-button-active-border-color);
-    background-color: var(--t-button-active-bg-color);
+    --t-button-hover-text-color: var(--t-color-primary);
+    --t-button-hover-bg-color: var(--t-fill-color-blank);
+    --t-button-hover-border-color: var(--t-color-primary); 
   }
 
   /*round*/
@@ -97,7 +92,7 @@
     border-color: var(--t-button-disabled-border-color);
   }
 }
-
+/* bug: 解决样式覆盖问题 */
 @each $val in primary, success, warning, info, danger {
   .t-button--$(val) {
     --t-button-text-color: var(--t-color-white);
@@ -106,7 +101,6 @@
     --t-button-outline-color: var(--t-color-$(val)-light-5);
     --t-button-active-color: var(--t-color-$(val)-dark-2);
     --t-button-hover-text-color: var(--t-color-white);
-    --t-button-hover-link-text-color: var(--t-color-$(val)-light-5);
     --t-button-hover-bg-color: var(--t-color-$(val)-light-3);
     --t-button-hover-border-color: var(--t-color-$(val)-light-3);
     --t-button-active-bg-color: var(--t-color-$(val)-dark-2);
@@ -125,6 +119,32 @@
     --t-button-active-text-color: var(--t-color-white);
   }
 }
+/* @each $val in primary,success,warning,info,danger {
+  .vk-button--$(val) {
+    --t-button-text-color: var(--t-color-white);
+    --t-button-bg-color: var(--t-color-$(val));
+    --t-button-border-color: var(--t-color-$(val));
+    --t-button-outline-color: var(--t-color-$(val)-light-5);
+    --t-button-active-color: var(--t-color-$(val)-dark-2);
+    --t-button-hover-text-color: var(--t-color-white);
+    --t-button-hover-bg-color: var(--t-color-$(val)-light-3);
+    --t-button-hover-border-color: var(--t-color-$(val)-light-3);
+    --t-button-active-bg-color: var(--t-color-$(val)-dark-2);
+    --t-button-active-border-color: var(--t-color-$(val)-dark-2);
+    --t-button-disabled-text-color: var(--t-color-white);
+    --t-button-disabled-bg-color: var(--t-color-$(val)-light-5);
+    --t-button-disabled-border-color: var(--t-color-$(val)-light-5);
+  }
+  .vk-button--$(val).is-plain {
+    --t-button-text-color: var(--t-color-$(val));
+    --t-button-bg-color: var(--t-color-$(val)-light-9);
+    --t-button-border-color: var(--t-color-$(val)-light-5);
+    --t-button-hover-text-color: var(--t-color-white);
+    --t-button-hover-bg-color: var(--t-color-$(val));
+    --t-button-hover-border-color: var(--t-color-$(val));
+    --t-button-active-text-color: var(--t-color-white);
+  }
+} */
 
 .t-button--large {
   --t-button-size: 40px;
