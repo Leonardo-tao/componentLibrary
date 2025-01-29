@@ -1,13 +1,32 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Layout from '@/components/Layout.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'home',
-    //   component: HomeView,
-    // },
+    {
+      path: '/',
+      component: Layout,
+      children: [
+        {
+          path: '',
+          name: 'Index',
+          component: () => import('@/views/HomeView.vue'),
+        },
+      ],
+    },
+    {
+      path: '/button',
+      component: Layout,
+      children: [
+        {
+          path: '',
+          name: 'Button',
+          meta: { title: '按钮' },
+          component: () => import('@/views/ButtonView.vue'),
+        },
+      ],
+    },
     // {
     //   path: '/about',
     //   name: 'about',
