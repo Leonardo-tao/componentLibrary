@@ -22,10 +22,11 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000;
   font-size: 20px;
   text-align: center;
-  margin-top: 2rem;
+  margin: 2rem 0 1rem;
+  padding-bottom: 6px;
+  border-bottom: 3px solid #1b7587;
 }
 nav a {
   display: block;
@@ -33,6 +34,7 @@ nav a {
   height: 100%;
   line-height: 50px;
   border-right: 1px solid #fff;
+  border-radius: 50px;
   flex: 1;
 
   &:last-child {
@@ -40,13 +42,17 @@ nav a {
   }
   
   &:hover {
-    background-color: #852682;
+    background-color: #f5f7fa;
     transition: all .5s;
     cursor: pointer;
   }
 }
 .router-link-active {
-  background-color: #852682;
+  background-color: #eff2f7;
+
+  &:hover {
+    background-color: #eff2f7;
+  }
 }
 
 .logo {
