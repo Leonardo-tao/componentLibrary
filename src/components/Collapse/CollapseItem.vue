@@ -31,4 +31,17 @@ const handleClick = () => {
 </script>
 
 <style scoped>
+.t-collapse-item__header {
+  background-color: pink;
+  cursor: pointer;
+  height: 50px;
+  border-bottom: 1px solid black;
+}
+
+.t-collapse-item__content {
+  background-color: greenyellow;
+  cursor: pointer;
+  height: 50px;
+  margin-bottom: 20px;
+}
 </style>

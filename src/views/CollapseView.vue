@@ -1,5 +1,5 @@
 <template>
-  <Collapse>
+  <Collapse v-model="openedValue" accordion>
     <Item name="a">
       <template #title>
         <h1>nice title</h1>
@@ -14,11 +14,15 @@
       <div>this is c ccccc test</div>
     </Item>
   </Collapse>
+  {{ openedValue }}
 </template>
 
 <script setup lang="ts">
 import Collapse from "@/components/Collapse/Collapse.vue";
 import Item from "@/components/Collapse/CollapseItem.vue";
+import { ref } from "vue";
+
+const openedValue = ref([])
 </script>
 
 <style scoped>
