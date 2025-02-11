@@ -14,7 +14,6 @@
       <div>this is c ccccc test</div>
     </Item>
   </Collapse>
-  {{ openedValue }}
 </template>
 
 <script setup lang="ts">
