@@ -83,4 +83,8 @@
   --t-mask-color: rgba(255, 255, 255, 0.9);
   --t-mask-color-extra-light: rgba(255, 255, 255, 0.3);
   --t-svg-monochrome-grey: var(--t-border-color);
+
+  /* animation */
+  --t-transition-duration: .3s;
+  --t-transition-duration-fast: .2s;
 }

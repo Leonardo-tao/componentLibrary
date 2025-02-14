@@ -16,6 +16,7 @@
 .t-collapse-item__header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: var(--t-collapse-header-height);
   line-height: var(--t-collapse-header-height);
   background-color: var(--t-collapse-header-bg-color);
@@ -33,6 +34,12 @@
   }
   &.is-active {
     border-bottom-color: transparent;
+    .header-angle {
+      transform: rotate(90deg);
+    }
+  }
+  .header-angle {
+    transition: transform var(--t-transition-duration);
   }
 }
 
@@ -49,5 +56,5 @@
 
 .slide-enter-active,
 .slide-leave-active {
-  transition: height .5s ease-in-out;
+  transition: height var(--t-transition-duration) ease-in-out;
 }

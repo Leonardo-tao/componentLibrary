@@ -13,6 +13,9 @@
     <Item name="c" title="nice title ccc" disabled>
       <div>this is c ccccc test</div>
     </Item>
+    <Item name="d" title="nice title d">
+      <div>this is icon test</div>
+    </Item>
   </Collapse>
 </template>
 
