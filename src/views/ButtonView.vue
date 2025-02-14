@@ -2,44 +2,44 @@
   <main>
     <div class="button-item">
       <h1><b>属性按钮</b></h1>
-      <TtButton ref="buttonRef">Test Button</TtButton>
-      <TtButton plain>Plain Button</TtButton>
-      <TtButton round>Round Button</TtButton>
-      <TtButton circle>CB</TtButton>
-      <TtButton disabled>Disabled Button</TtButton>
+      <Button ref="buttonRef">Test Button</Button>
+      <Button plain>Plain Button</Button>
+      <Button round>Round Button</Button>
+      <Button circle>CB</Button>
+      <Button disabled>Disabled Button</Button>
       <hr>
     </div>
     <div class="button-item">
       <h1><b>类型按钮</b></h1>
-      <TtButton>Default</TtButton>
-      <TtButton type="primary">Primary</TtButton>
-      <TtButton type="success">Success</TtButton>
-      <TtButton type="info">Info</TtButton>
-      <TtButton type="warning">Warning</TtButton>
-      <TtButton type="danger">Danger</TtButton>
+      <Button>Default</Button>
+      <Button type="primary">Primary</Button>
+      <Button type="success">Success</Button>
+      <Button type="info">Info</Button>
+      <Button type="warning">Warning</Button>
+      <Button type="danger">Danger</Button>
       <hr>
     </div>
     <div class="button-item">
       <h1><b>朴素按钮</b></h1>
-      <TtButton plain>Plain</TtButton>
-      <TtButton type="primary" plain>Primary</TtButton>
-      <TtButton type="success" plain>Success</TtButton>
-      <TtButton type="info" plain>Info</TtButton>
-      <TtButton type="warning" plain>Warning</TtButton>
-      <TtButton type="danger" plain>Danger</TtButton>
+      <Button plain>Plain</Button>
+      <Button type="primary" plain>Primary</Button>
+      <Button type="success" plain>Success</Button>
+      <Button type="info" plain>Info</Button>
+      <Button type="warning" plain>Warning</Button>
+      <Button type="danger" plain>Danger</Button>
       <hr>
     </div>
     <div class="button-item">
       <h1><b>形状按钮</b></h1>
-      <TtButton size="large">large</TtButton>
-      <TtButton size="small">small</TtButton>
+      <Button size="large">large</Button>
+      <Button size="small">small</Button>
       <hr>
     </div>
   </main>
 </template>
 
 <script setup lang="ts">
-import TtButton from '@/components/Button/Button.vue'
+import Button from '@/components/Button/Button.vue'
 </script>
 
 <style scoped>

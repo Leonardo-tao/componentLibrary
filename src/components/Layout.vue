@@ -4,6 +4,7 @@
       <router-link to="/">Home</router-link>
       <router-link to="/button">Button</router-link>
       <router-link to="/collapse">Collapse</router-link>
+      <router-link to="/icon">Icon</router-link>
     </nav>
     <router-view />
   </div>

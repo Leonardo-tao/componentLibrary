@@ -38,7 +38,19 @@ const router = createRouter({
           component: () => import('@/views/CollapseView.vue'),
         },
       ],
-    }, 
+    },
+    {
+      path: '/icon',
+      component: Layout,
+      children: [
+        {
+          path: '',
+          name: 'Icon',
+          meta: { title: '图标' },
+          component: () => import('@/views/IconView.vue'),
+        },
+      ],
+    },
   ],
 })
 
