@@ -35,6 +35,12 @@
       <Button size="small">small</Button>
       <hr>
     </div>
+    <div class="button-item">
+      <h1><b>带图标按钮</b></h1>
+      <Button loading>loading</Button>
+      <Button icon="user-secret">user-secret</Button>
+      <hr>
+    </div>
   </main>
 </template>
 

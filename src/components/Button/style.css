@@ -91,6 +91,10 @@
     background-color: var(--t-button-disabled-bg-color);
     border-color: var(--t-button-disabled-border-color);
   }
+
+  [class*=t-icon] + span {
+    margin-left: 6px;
+  }
 }
 /* bug: 解决样式覆盖问题 */
 @each $val in primary, success, warning, info, danger {
